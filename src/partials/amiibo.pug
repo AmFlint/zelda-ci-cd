@@ -1,0 +1,14 @@
+section.amiibo
+    .wrapper-info.wrapper-info__left.wrapper-info--amiibo
+        .amiibo-block
+            h2.wrapper-info__title Amiibo#[br]#[span.wrapper-info__subtitle Entourez-vous des meilleurs aventuriers] 
+            p.wrapper-info__desc.wrapper-info__desc--light Grâce aux figurines Amiibo, recevez des objets qui vous aiderons à progresser dans votre aventure et à redécouvrir Zelda : Breath of the Wild.
+            include ../blocs/buttons-wrapper.pug
+        .amiibo-content
+            .amiibo-slider
+                .amiibo-slider__figure
+                    .wrapper-img.wrapper-img--amiibo
+                        img(src=require("../img/characters/daruk.png") alt="Daruk zelda breath of the wild")
+                    h3.amiibo-slider__figure-title Daruk
+                    img(src=require("../img/amiibo/daruk-amiibo.png"), alt="Daruk zelda amiibo breath of the wild").amiibo-slider__figure-image
+            a(class='consoles-btn--order buttons-wrapper__btn buttons-wrapper__btn--light' href='#') Voir les différents amiibos

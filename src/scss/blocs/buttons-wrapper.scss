@@ -1,0 +1,80 @@
+.buttons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  @include tablet-landscape {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+}
+
+.buttons-wrapper__btn {
+  @include flexbox();
+  @include align-items(center);
+  padding: 1.2rem 1rem;
+  border: none;
+  border-radius: .5rem;
+  text-align: center;
+  font-family: $Comfortaa;
+  font-size: $font-button-discover;
+  letter-spacing: 0;
+  color: $font-light;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 .1rem .2rem 0 #000000;
+  box-shadow: 0 .1rem .2rem 0 #000000;
+}
+
+.buttons-wrapper__btn--light {
+  background: $background-button;
+  &:hover{
+    background: $background-button-light-hover;
+  }
+}
+
+.buttons-wrapper__btn--dark {
+  // not displayed on mobile
+  display: none;
+  background: url('../img/button-background.jpg') center no-repeat;
+  background-size: 120%;
+  &:hover{
+    background: $background-button-dark-hover;
+  }
+  @include bcg;
+  text-transform: uppercase;
+
+  @include tablet-landscape {
+    display: block;
+    margin-left: 1rem;
+  }
+}
+
+.buttons-wrapper__btn--darkBig {
+  display: inline-block;
+  width: 80%;
+  margin: 0 auto;
+  background: url('../img/button-background.jpg') center no-repeat;
+  background-size: 120%;
+  @include bcg;
+  font-size: $font-button-order;
+  text-transform: uppercase;
+  &:hover{
+    background: $background-button-dark-hover;
+  }
+  @include tablet-portrait() {
+    width: 25.3rem;
+    font-size: $font-consoles;
+  }
+}
+
+.wrapper-info__left .buttons-wrapper {
+  @include tablet-landscape {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,56 @@
+.consoles-btn {
+    width: 50%;
+    max-width: 18rem;
+    padding: 1.5rem 0;
+    font-family: 'Helvetica', 'sans-serif';
+    font-weight: 600;
+    font-size: $font-consoles;
+    text-align: center;
+    border-radius: .7rem;
+    opacity: .7;
+    color: $font-light;
+    box-shadow: 0 .1rem .2rem 0 #000;
+    transition: opacity .5s ease;
+    @include tablet-portrait {
+        max-width: auto;
+    }
+}
+
+.consoles-btn--switch {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    background: $background-button-switch;
+}
+
+.consoles-btn--wii {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background: $background-button-wii;
+}
+
+.consoles-btn--active {
+    opacity: 1;
+}
+
+.consoles-btn--order {
+    font-family: $Comfortaa;
+    font-size: $font-button-consoles;
+    display: block;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1.2rem 0;
+
+    @include tablet-portrait {
+        max-width: 50%;
+        font-size: $font-button-order;
+    }
+
+    @include tablet-landscape {
+        max-width: 90%;
+    }
+
+    @include desktop {
+        max-width: 70%;
+    }
+}

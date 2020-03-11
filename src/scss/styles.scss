@@ -1,0 +1,26 @@
+@import 'global/_screen';
+@import 'global/_mixins';
+@import 'global/_reset';
+@import 'global/_layouts';
+@import 'global/_fonts';
+@import 'global/_colors';
+
+@import 'blocs/header';
+@import 'blocs/footer';
+@import 'blocs/buttons-wrapper';
+@import 'blocs/wrapper-info';
+@import 'blocs/wrapper-content';
+@import 'blocs/consoles-btn';
+@import 'blocs/consoles-content';
+@import 'blocs/amiibo';
+@import 'blocs/amiibo-slider';
+@import 'blocs/intro';
+@import 'blocs/monde';
+@import 'blocs/consoles';
+@import 'blocs/histoire';
+@import 'blocs/personnages';
+@import 'blocs/ennemis';
+@import 'blocs/share';
+@import 'blocs/environment';
+@import 'blocs/video-content';
+@import 'blocs/sticky-btn';

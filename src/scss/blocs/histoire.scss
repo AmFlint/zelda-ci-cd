@@ -1,0 +1,38 @@
+.histoire {
+  position: relative;
+  overflow: hidden;
+  z-index: 44;
+  background: url('../img/backgrounds/bg-motifs-bleu.png'); 
+  @include bcg;
+  @include section-padding;
+
+  @include tablet-landscape {
+      @include flexbox();
+      @include justify-content(space-between);
+      @include align-items(center);
+  } 
+}
+
+.wrapper-img__link {
+  mix-blend-mode : soft-light;
+  position: absolute;
+  top: 0;
+  width: 150%;
+  z-index: -5;
+  @include tablet-landscape {
+    width: 100%;
+  }
+  @include desktop {
+    width: 100%;
+    left: 66rem;
+  }
+    img {
+      width: 100%;
+      @include tablet-portrait {
+        width: 40%;
+      }
+      @include tablet-landscape {
+        width: 40%;
+      }
+    }
+}

@@ -1,0 +1,24 @@
+.amiibo-slider {
+    margin-top: 4rem;
+
+    @include tablet-landscape {
+        margin-top: 0;
+    }
+}
+
+.amiibo-slider__figure-title {
+    font-family: $Berkshire;
+    font-size: $font-title;
+    text-align: center;
+    color: $font-tertiary;
+}
+
+.amiibo-slider__figure-image {
+    display: block;
+    max-width: 50%;
+    margin: 3rem auto 2rem;
+
+    @include tablet-portrait() {
+        margin: 5rem auto;
+    }
+}

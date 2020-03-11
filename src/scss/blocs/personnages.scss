@@ -1,0 +1,39 @@
+.personnages {
+  position: relative;
+  overflow: hidden;
+  z-index: 44;
+  height:  77rem;
+  background: $white;
+  @include bcg;
+  @include tablet-portrait{
+    background-image: url('../img/backgrounds/bg-personnages.png') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .wrapper-content {
+    @include tablet-landscape {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.wrapper-img__left {
+  position: absolute;
+  z-index: -5;
+  top:50%;
+  left: -16.2rem;
+  opacity: 0.4;  
+  transform: translateY(-50%);
+  @include tablet-portrait {
+    display: none;
+  }
+}
+.wrapper-img__right {
+  position: absolute;
+  right: -11.5rem;
+  transform: translateY(125%);
+  opacity: 0.4;  
+  @include tablet-portrait {
+    display: none;
+  }
+}

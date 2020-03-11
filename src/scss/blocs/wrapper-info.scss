@@ -1,0 +1,123 @@
+.wrapper-info {
+    padding: 0 1.5rem;
+    font-family: $Didone;
+    color: $white;
+    text-align: center;
+    &:nth-child(3){
+        color:#413f3f;
+    }
+    @include tablet-landscape {
+        width: 60%;
+        text-align: right;
+        padding: 0;
+    }
+    @include tablet-portrait {
+        padding: 0 8rem;        
+    }
+    @include desktop {
+        width: 40%;
+        padding: 0;
+    }
+}
+
+.wrapper-info__title {
+    @include flexbox();
+    @include flex-direction(column);
+    margin-bottom: 4rem;
+    font-size: $font-title;
+    font-family: $Berkshire;
+    font-weight: 700;
+    @include tablet-landscape {
+        font-size: $font-title;
+        margin-top: 0;
+    }
+   /*  @include tablet-portrait {
+        margin-top: 0;
+    } */
+
+}
+
+.wrapper-info__title--sticky {
+    margin: 0 0 2.5rem;
+}
+
+.wrapper-info__title--console {
+    @include tablet-landscape {
+        text-align: left;
+    }
+}
+
+
+.wrapper-info__subtitle {
+    font-family: $Didone;
+    font-weight: 400;
+}
+
+.wrapper-info__desc--light {
+    color: $font-light;
+}
+
+.wrapper-info__desc {
+    font-size: $font-text-bloc;
+    line-height: 1.47;
+    margin-bottom: 3rem;
+}
+
+.wrapper-info__left {
+    @include tablet-landscape {
+        text-align: left;
+    }
+    @include desktop {
+        padding: 0 0;
+    }
+}
+
+.wrapper-info--amiibo {
+    position: relative;
+    z-index: 2;
+    color: $font-tertiary;
+
+    @include tablet-landscape {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .wrapper-info__title {
+        margin: 0 0 4rem;
+        &:nth-child(3) {
+            @include desktop {
+                margin-top: 8rem !important;
+            }
+        }
+    }
+
+    .wrapper-info__subtitle {
+        margin-top: 1rem;
+        font-size: $font-consoles;
+        line-height: 150%;
+    
+        @include tablet-portrait() {
+            margin-top: 3rem;
+        }
+    }
+
+    .wrapper-info__desc {
+        margin-bottom: 2.5rem;
+
+        @include tablet-portrait() {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.wrapper-info--consoles {
+    @include tablet-landscape {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        padding: 0;
+    }
+}
