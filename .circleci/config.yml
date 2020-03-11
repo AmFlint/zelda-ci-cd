@@ -49,7 +49,7 @@ jobs:
           name: Keyscan ssh host verification
           command: |
             mkdir -p ~/.ssh
-            ssh-keyscan 35.180.126.227 >> .ssh/known_hosts
+            ssh-keyscan 35.180.126.227 >> ~/.ssh/known_hosts
       - run:
           name: Upload code to server
           command: scp -r build/* website@35.180.126.227:/home/website/zelda
