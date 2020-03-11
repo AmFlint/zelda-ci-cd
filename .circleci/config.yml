@@ -55,6 +55,12 @@ jobs:
           command: scp -r build/* website@35.180.126.227:/home/website/zelda
 
 workflows:
-    build-and-test:
+    build-and-deploy:
       jobs:
-        - build-and-test
+        - install-dependencies
+        - build:
+            requires:
+              - install-dependencies
+        - deploy:
+            requires:
+              - build
