@@ -24,7 +24,7 @@
     "hot-module-replacement": "^3.0.0",
     "html-webpack-plugin": "^2.26.0",
     "image-webpack-loader": "^3.4.2",
-    "node-sass": "^4.4.0",
+    "node-sass": "^4.13.1",
     "postcss-loader": "^2.0.10",
     "postcss-plugin-px2rem": "^0.7.0",
     "pug": "^2.0.0-rc.4",
